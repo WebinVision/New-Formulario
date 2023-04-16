@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <h1 id="titulo">Candidate-se e Venha Trabalhar Conosco!</h1>
+        <h1 class="titulo">Candidate-se e Venha Trabalhar Conosco!</h1>
         <h2>Aguardamos a sua candidatura.</h2>
         <p id="subtitulo">Informe seus dados:</p>
     </div>
@@ -17,11 +17,11 @@
         <form action="">
             <label for="nome"><strong>Nome</strong></label>
             <div class="input">
-                <input type="text" name="nome" placeholder="Primeiro nome" id="name" required>
+                <input type="text" id="name" name="nome" placeholder="Primeiro nome" required>
             </div><br>
             <label for="nome"><strong>Último</strong></label>
             <div class="input">
-                <input type="text" name="nome" placeholder="Último nome" id="name" required>
+                <input type="text" id="name" name="nome" placeholder="Último nome" required>
             </div><br>
 
             <div id="data">
@@ -34,16 +34,16 @@
             <div classe="checkbox">
                 <label><strong>Qual seu gênero?</strong></label><br>
                 <label>
-                    <input type="radio" name="genero" value="masculino">Masculino
+                    <input type="radio" id="genero" name="genero" value="masculino">Masculino
                 </label><br>
                 <label>
-                    <input type="radio" name="genero" value="feminino">Feminino
+                    <input type="radio" id="genero" name="genero" value="feminino">Feminino
                 </label><br>
                 <label>
-                    <input type="radio" name="genero" value="naobinarie">Não Binário
+                    <input type="radio" id="genero" name="genero" value="naobinarie">Não Binário
                 </label><br>
                 <label>
-                    <input type="radio" name="genero" value="outro">Outro
+                    <input type="radio" id="genero" name="genero" value="outro">Outro
                 </label>
             </div><br>
 
@@ -56,7 +56,7 @@
                 <div class="input">
                     <input type="text" name="naturalidade" id="naturalidade" required>
                 </div>
-            </div>
+            </div><br>
             
             <div><strong>Etnia</strong></div>
                 <select id="Etnia" required>
@@ -72,76 +72,104 @@
             <div classe="checkbox">
                 <label><strong>Estado Civil:</strong></label><br>
                 <label>
-                    <input type="checkbox" name="estadocivil" value="solteiro">Solteiro
+                    <input type="radio" id="estadocivil" name="estadocivil" value="solteiro">Solteiro
                 </label><br>
                 <label>
-                    <input type="checkbox" name="estadocivil" value="casado">Casado
+                    <input type="radio" id="estadocivil" name="estadocivil" value="casado">Casado
                 </label><br>
                 <label>
-                    <input type="checkbox" name="estadocivil" value="separado">Separado
+                    <input type="radio" id="estadocivil" name="estadocivil" value="separado">Separado
                 </label><br>
                 <label>
-                    <input type="checkbox" name="estadocivil" value="divorciado">Divorciado
+                    <input type="radio" id="estadocivil" name="estadocivil" value="divorciado">Divorciado
                 </label><br>
                 <label>
-                    <input type="checkbox" name="estadocivil" value="viuvo">Viúvo
+                    <input type="radio" id="estadocivil" name="estadocivil" value="viuvo">Viúvo
                 </label><br>
                 <label>
-                    <input type="checkbox" name="estadocivil" value="encalhado">Encalhado
+                    <input type="radio" id="estadocivil" name="estadocivil" value="encalhado">Encalhado
                 </label>
             </div><br>
 
             <div>
                 <label for="endereco"><strong>Endereço</strong></label>
                 <div class="input">
-                    <input type="text" name="endereco" placeholder="Endereço Residêncial" id="endereco" required>
+                    <input type="text" id="endereco" name="endereco" placeholder="Endereço Residêncial" required>
                 </div><br>
                 <label for="cep"><strong>CEP</strong></label>
                 <div class="input">
-                    <input name="cep" placeholder="CEP/Código Postal" id="cep" required>
+                    <input type="number" id="cep" name="cep" placeholder="CEP/Código Postal" required>
                 </div><br>
                 <label for="cidade"><strong>Cidade</strong></label>
                 <div class="input">
-                    <input name="cidade" id="cidade" required>
+                    <input type="text" id="cidade" name="cidade" required>
                 </div><br>
-                <label for="regiao"><strong>Região</strong></label>
+                <label for="estado"><strong>Estado</strong></label>
                 <div class="input">
-                    <input name="regiao" id="regiao" required>
+                    <input type="text" id="estado" name="estado" required>
                 </div><br>
                 <label for="pais"><strong>País</strong></label>
                 <div class="input">
-                    <input name="pais" id="pais" required>
+                    <input type="text" id="pais" name="pais" required>
                 </div><br>
                 <label for="email"><strong>Email</strong></label>
                 <div class="input">
-                    <input name="email" placeholder="Exemplo@gmail.com" id="email" required>
+                    <input type="text" id="email" name="email" placeholder="Exemplo@gmail.com" required>
                 </div>
             </div><br>
 
             <div>
-                <h1 classe="titulo"></h1>
-                <h2></h2>
-                <p id="subtitulo">Informe seus dados:</p>
+                <h1 classe="titulo">Informaçaoes Adicionais da Candidatura </h1>
             </div>
+
+            <div classe="checkbox">
+                <label><strong>Onde você ouviu sobre nós?</strong></label><br>
+                <label>
+                    <input type="checkbox" id="midia" name="midia" value="midia">Mídia social
+                </label><br>
+                <label>
+                    <input type="checkbox" id="midia" name="midia" value="midia">Anúncio de jornal
+                </label><br>
+                <label>
+                    <input type="checkbox" id="midia" name="midia" value="midia">Anúncio digitais
+                </label><br>
+                <label>
+                    <input type="checkbox" id="midia" name="midia" value="midia">Amigos
+                </label><br>
+                <label>
+                    <input type="checkbox" id="midia" name="midia" value="midia">Outro
+                </label>
+            </div><br>
+
+            <div>
+                <label><strong>Descreva suas habilidades</strong></label>
+                <div class="comentario">
+                    <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
+                </div>
+            </div><br>
+
+            <div>
+                <label><strong>Certificações</strong></label>
+                <div class="comentario">
+                    <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
+                </div>
+            </div><br>
 
             <div>
                 <label><strong>Notas, sugestões ou perguntas</strong></label>
                 <div class="comentario">
-                    <textarea row="6" style="width:26em" name="comentario"></textarea>
+                    <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
                 </div>
             </div><br>
+
+            <div>
+                <label for="myfile">Selecione um arquivo:</label>
+                <input type="file" id="myfile" name="myfile"><br><br>
+            </div>
 
             <div id="botao">
                 <button type="submit">Concluído</button>
             </div>
-
-            <!-- fazer ckeckbox sobre a candidatura do formulario com formato de quadrado
-                fazer uma caixa para descrever habilidades
-                fazer outra caixa para certificados
-                fazer uma caixa(espaço) para colocar arquivos 
-                pesquisar como que faz caixa para colocar arquivos
-            -->
-
         </form>
     </div>
 </body>
