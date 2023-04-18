@@ -4,173 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <title>Candidatura</title>
 </head>
 <body>
-    <div>
-        <h1 class="titulo">Candidate-se e Venha Trabalhar Conosco!</h1>
-        <h2>Aguardamos a sua candidatura.</h2>
-        <p id="subtitulo">Informe seus dados:</p>
+    <div class="container">
+        <div class="content">
+        <div class="header">
+            <h2 class="subtitulo">Trabalhe conosco</h2>
+            <p class="subtitulo">Informe seus dados:</p>
+        </div>
+
+        <div id="form">
+            <form action="">
+                <label for="nome"><strong>Nome</strong></label>
+                <div class="input">
+                    <input type="text" id="name" name="nome" placeholder="Primeiro nome" required>
+                </div>
+                <br>
+                <label for="last-name"><strong>Sobrenome</strong></label>
+                <div class="input">
+                    <input type="text" id="last-name" name="sobrenome" placeholder="Sobrenome" required>
+                </div>
+                <br>
+
+                <div id="data">
+                    <label><strong>Insira a sua data de nascimento:<strong></label>
+                    <div class="data">
+                        <input type="date" required> 
+                    </div>
+                </div>
+                <br>
+
+                <div class="genero">
+                    <span><strong>Qual seu gênero?</strong></span>
+                    <br>
+                    <label>
+                        <input type="radio" class="input-genero" name="genero" value="masculino">Masculino
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" class="input-genero" name="genero" value="feminino">Feminino
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" class="input-genero" name="genero" value="naobinarie">Não Binário
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" class="input-genero" name="genero" value="outro">Outro
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <spam><strong>Nacionalidade</strong></spam>
+                    <div class="input">
+                        <label for="nacionalidade">Nacionalidade:</label>
+                        <input type="text" name="nacionalidade" id="nacionalidade" required>
+                    </div>
+                    <br>
+                    <label for="naturalidade"><strong>Naturalidade</strong></label>
+                    <div class="input">
+                        <input type="text" name="naturalidade" id="naturalidade" required>
+                    </div>
+                </div>
+                <br>
+                
+                <div><strong>Etnia</strong></div>
+                    <select id="Etnia" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Branco</option>
+                    <option>Pardo</option>
+                    <option>Preto</option>
+                    <option>Amarelo</option>
+                    <option>Indígena</option>
+                    </select>
+                    <br>
+                </div>
+
+                <div classe="checkbox">
+                    <spam><strong>Estado Civil:</strong></spam>
+                    <br>
+                    <label>
+                        <input type="radio" id="estadocivil" name="estadocivil" value="solteiro">Solteiro
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="estadocivil" name="estadocivil" value="casado">Casado
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="estadocivil" name="estadocivil" value="separado">Separado
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="estadocivil" name="estadocivil" value="divorciado">Divorciado
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="estadocivil" name="estadocivil" value="viuvo">Viúvo
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" id="estadocivil" name="estadocivil" value="encalhado">Encalhado
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <label for="endereco"><strong>Endereço</strong></label>
+                    <div class="input">
+                        <input type="text" id="endereco" name="endereco" placeholder="Endereço Residêncial" required>
+                    </div>
+                    <br>
+                    <label for="cep"><strong>CEP</strong></label>
+                    <div class="input">
+                        <input type="number" id="cep" name="cep" placeholder="CEP/Código Postal" required>
+                    </div>
+                    <br>
+                    <label for="cidade"><strong>Cidade</strong></label>
+                    <div class="input">
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+                    <br>
+                    <label for="estado"><strong>Estado</strong></label>
+                    <div class="input">
+                        <input type="text" id="estado" name="estado" required>
+                    </div>
+                    <br>
+                    <label for="pais"><strong>País</strong></label>
+                    <div class="input">
+                        <input type="text" id="pais" name="pais" required>
+                    </div>
+                    <br>
+                    <label for="email"><strong>Email</strong></label>
+                    <div class="input">
+                        <input type="text" id="email" name="email" placeholder="Exemplo@gmail.com" required>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                    <h1 classe="titulo">Informaçaoes Adicionais da Candidatura </h1>
+                </div>
+
+                <div classe="checkbox">
+                    <label><strong>Onde você ouviu sobre nós?</strong></label><br>
+                    <label>
+                        <input type="checkbox" id="midia" name="midia" value="midia">Mídia social
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="midia" name="midia" value="midia">Anúncio de jornal
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="midia" name="midia" value="midia">Anúncio digitais
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="midia" name="midia" value="midia">Amigos
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" id="midia" name="midia" value="midia">Outro
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <label><strong>Descreva suas habilidades</strong></label>
+                    <div class="comentario">
+                        <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                    <label><strong>Certificações</strong></label>
+                    <div class="comentario">
+                        <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                    <label><strong>Notas, sugestões ou perguntas</strong></label>
+                    <div class="comentario">
+                        <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                    <label for="myfile">Selecione um arquivo:</label>
+                    <input type="file" id="myfile" name="myfile"><br><br>
+                </div>
+
+                <div id="botao">
+                    <button type="submit">Concluído</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div id="form">
-        <form action="">
-            <label for="nome"><strong>Nome</strong></label>
-            <div class="input">
-                <input type="text" id="name" name="nome" placeholder="Primeiro nome" required>
-            </div><br>
-            <label for="nome"><strong>Último</strong></label>
-            <div class="input">
-                <input type="text" id="name" name="nome" placeholder="Último nome" required>
-            </div><br>
-
-            <div id="data">
-                <label><strong>Insira a sua data de nascimento:<strong></label>
-                <div class="data">
-                    <input type="date" required> 
-                </div>
-            </div><br>
-
-            <div classe="checkbox">
-                <label><strong>Qual seu gênero?</strong></label><br>
-                <label>
-                    <input type="radio" id="genero" name="genero" value="masculino">Masculino
-                </label><br>
-                <label>
-                    <input type="radio" id="genero" name="genero" value="feminino">Feminino
-                </label><br>
-                <label>
-                    <input type="radio" id="genero" name="genero" value="naobinarie">Não Binário
-                </label><br>
-                <label>
-                    <input type="radio" id="genero" name="genero" value="outro">Outro
-                </label>
-            </div><br>
-
-            <div>
-                <label for="nacionalidade"><strong>Nacionalidade</strong></label>
-                <div class="input">
-                    <input type="text" name="nacionalidade" id="nacionalidade" required>
-                </div><br>
-                <label for="naturalidade"><strong>Naturalidade</strong></label>
-                <div class="input">
-                    <input type="text" name="naturalidade" id="naturalidade" required>
-                </div>
-            </div><br>
-            
-            <div><strong>Etnia</strong></div>
-                <select id="Etnia" required>
-                <option selected disabled value="">Selecione</option>
-                <option>Branco</option>
-                <option>Pardo</option>
-                <option>Preto</option>
-                <option>Amarelo</option>
-                <option>Indígena</option>
-                </select><br><br>
-            </div>
-
-            <div classe="checkbox">
-                <label><strong>Estado Civil:</strong></label><br>
-                <label>
-                    <input type="radio" id="estadocivil" name="estadocivil" value="solteiro">Solteiro
-                </label><br>
-                <label>
-                    <input type="radio" id="estadocivil" name="estadocivil" value="casado">Casado
-                </label><br>
-                <label>
-                    <input type="radio" id="estadocivil" name="estadocivil" value="separado">Separado
-                </label><br>
-                <label>
-                    <input type="radio" id="estadocivil" name="estadocivil" value="divorciado">Divorciado
-                </label><br>
-                <label>
-                    <input type="radio" id="estadocivil" name="estadocivil" value="viuvo">Viúvo
-                </label><br>
-                <label>
-                    <input type="radio" id="estadocivil" name="estadocivil" value="encalhado">Encalhado
-                </label>
-            </div><br>
-
-            <div>
-                <label for="endereco"><strong>Endereço</strong></label>
-                <div class="input">
-                    <input type="text" id="endereco" name="endereco" placeholder="Endereço Residêncial" required>
-                </div><br>
-                <label for="cep"><strong>CEP</strong></label>
-                <div class="input">
-                    <input type="number" id="cep" name="cep" placeholder="CEP/Código Postal" required>
-                </div><br>
-                <label for="cidade"><strong>Cidade</strong></label>
-                <div class="input">
-                    <input type="text" id="cidade" name="cidade" required>
-                </div><br>
-                <label for="estado"><strong>Estado</strong></label>
-                <div class="input">
-                    <input type="text" id="estado" name="estado" required>
-                </div><br>
-                <label for="pais"><strong>País</strong></label>
-                <div class="input">
-                    <input type="text" id="pais" name="pais" required>
-                </div><br>
-                <label for="email"><strong>Email</strong></label>
-                <div class="input">
-                    <input type="text" id="email" name="email" placeholder="Exemplo@gmail.com" required>
-                </div>
-            </div><br>
-
-            <div>
-                <h1 classe="titulo">Informaçaoes Adicionais da Candidatura </h1>
-            </div>
-
-            <div classe="checkbox">
-                <label><strong>Onde você ouviu sobre nós?</strong></label><br>
-                <label>
-                    <input type="checkbox" id="midia" name="midia" value="midia">Mídia social
-                </label><br>
-                <label>
-                    <input type="checkbox" id="midia" name="midia" value="midia">Anúncio de jornal
-                </label><br>
-                <label>
-                    <input type="checkbox" id="midia" name="midia" value="midia">Anúncio digitais
-                </label><br>
-                <label>
-                    <input type="checkbox" id="midia" name="midia" value="midia">Amigos
-                </label><br>
-                <label>
-                    <input type="checkbox" id="midia" name="midia" value="midia">Outro
-                </label>
-            </div><br>
-
-            <div>
-                <label><strong>Descreva suas habilidades</strong></label>
-                <div class="comentario">
-                    <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
-                </div>
-            </div><br>
-
-            <div>
-                <label><strong>Certificações</strong></label>
-                <div class="comentario">
-                    <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
-                </div>
-            </div><br>
-
-            <div>
-                <label><strong>Notas, sugestões ou perguntas</strong></label>
-                <div class="comentario">
-                    <textarea id="comentario" name="comentario" rows="6" cols="50"></textarea>
-                </div>
-            </div><br>
-
-            <div>
-                <label for="myfile">Selecione um arquivo:</label>
-                <input type="file" id="myfile" name="myfile"><br><br>
-            </div>
-
-            <div id="botao">
-                <button type="submit">Concluído</button>
-            </div>
-        </form>
     </div>
 </body>
 </html>
