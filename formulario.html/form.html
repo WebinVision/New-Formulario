@@ -13,10 +13,10 @@
 <body>
     <div class="container">
         <div class="content">
-        <div class="header">
+        <header>
             <h2 class="subtitulo">Trabalhe conosco</h2>
             <p class="subtitulo">Informe seus dados:</p>
-        </div>
+        </header>
 
         <div id="form">
             <form action="">
@@ -61,14 +61,13 @@
                 <br>
 
                 <div>
-                    <spam><strong>Nacionalidade</strong></spam>
                     <div class="input">
                         <label for="nacionalidade">Nacionalidade:</label>
                         <input type="text" name="nacionalidade" id="nacionalidade" required>
                     </div>
                     <br>
-                    <label for="naturalidade"><strong>Naturalidade</strong></label>
                     <div class="input">
+                        <label for="naturalidade"><strong>Naturalidade</strong></label>
                         <input type="text" name="naturalidade" id="naturalidade" required>
                     </div>
                 </div>
@@ -200,9 +199,14 @@
                 </div>
                 <br>
 
-                <div>
-                    <label for="myfile">Selecione um arquivo:</label>
-                    <input type="file" id="myfile" name="myfile"><br><br>
+                <div id="area-upload">
+                    <span><strong>Foto do candidato:</strong></span>
+                    <label for="myfile" id="file-label">Selecione um arquivo</label>
+                    <div id="preview">
+                        <img id="image-preview" src="">
+                    </div>
+                    <input type="file" id="myfile" name="myfile" accept="image/*"><br><br>
+                    <button id="clear-btn">Limpar imagem</button>
                 </div>
 
                 <div id="botao">
@@ -211,6 +215,6 @@
             </form>
         </div>
     </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
