@@ -13,6 +13,7 @@ body {
     justify-content: center;
     background-image: url(./fundo.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .content {
